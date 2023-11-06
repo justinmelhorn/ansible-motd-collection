@@ -1,6 +1,6 @@
 ---
 - name: motd
-  become: yes
+  become: true
   ansible.builtin.template:
     src: motd.j2
     dest: /etc/motd
