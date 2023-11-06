@@ -1,0 +1,10 @@
+---
+- name: motd 
+  hosts: all
+  become: yes
+  tasks:
+    - name: motd
+      ansible.builtin.template:
+        src: motd.j2
+        dest: /etc/motd
+```
