@@ -1,6 +1,5 @@
 ---
 - name: motd 
-  hosts: all
   become: yes
   tasks:
     - name: motd
